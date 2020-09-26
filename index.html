@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count system pure javaScript</title>
+    <style>
+        .wrap {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <h3>Count system pure JavaScript</h3>
+        <input type="button" id="clickBtn" value="click">
+        <p id="showCountNumber">0</p>
+        <input type="button" id="resetCountNumber" value="reset">
+    </div>
+
+
+    <script>
+        let count = 0;
+        clickBtn.onclick = function() {
+            count++;
+            document.getElementById("showCountNumber").innerHTML = count;
+        }
+        resetCountNumber.onclick = function() {
+
+            count = 0;
+            document.getElementById("showCountNumber").innerHTML = count;
+
+        }
+    </script>
+
+</body>
+
+</html>
